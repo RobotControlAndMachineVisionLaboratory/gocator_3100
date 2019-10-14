@@ -1,19 +1,14 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
-PROJECT(gocator_3x00)
-message(STATUS "Executig CMakeLists of project  ${PROJECT_NAME}.")
-
-#SET(CMAKE_BUILD_TYPE "Debug")
-SET(CMAKE_BUILD_TYPE "Release")
-
-set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
-set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
-
 
 # Cmake policy
 if(COMMAND cmake_policy)
   cmake_policy(SET CMP0005 NEW) 
   cmake_policy(SET CMP0003 NEW)
 endif(COMMAND cmake_policy)
+
+# Project name and the type of project
+PROJECT(gocator_3x00)
+message(STATUS "Executig CMakeLists of project  ${PROJECT_NAME}.")
 
 #Set Flags
 SET(CMAKE_CXX_FLAGS_DEBUG "-g -Wall -D_REENTRANT")
